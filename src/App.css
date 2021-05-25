@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-content {
+  width: 39vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-auth {
+  background-color: white;
+  width: 21vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-auth img {
+  width: 45px;
+  height: 45px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-auth span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.login {
+  width: 100%;
+}
+
+input[type=password], input[type=text] {
+  background: rgb(233, 233, 233);
+  color: red;
+  padding: 10px;
+  width: 100%;
+  box-sizing:border-box;
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+}
+
+.right-content {
+  position: fixed;
+  width:61vw;
+  height: 100%;
+}
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
